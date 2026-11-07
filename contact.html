@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p>I would love to hear from you!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="media.html">Media</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Fill Out the Form</h2>
+            <p>
+                If you have a question, a project idea, or want to work
+                with me, please complete the form below.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required
+                        minlength="2">
+                    <br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number">
+                    <br><br>
+
+                    <label for="website">Your Website:</label><br>
+                    <input
+                        type="url"
+                        id="website"
+                        name="website"
+                        placeholder="https://example.com">
+                    <br><br>
+
+                    <label for="birthdate">Date of Birth:</label><br>
+                    <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Select a subject --</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="question">General Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <p>How would you prefer me to respond?</p>
+
+                    <input
+                        type="radio"
+                        id="email-response"
+                        name="response"
+                        value="email"
+                        required>
+                    <label for="email-response">Email</label>
+
+                    <input
+                        type="radio"
+                        id="phone-response"
+                        name="response"
+                        value="phone">
+                    <label for="phone-response">Phone</label>
+
+                    <br><br>
+
+                    <p>What are you interested in?</p>
+
+                    <input
+                        type="checkbox"
+                        id="web"
+                        name="interest"
+                        value="web">
+                    <label for="web">Web Development</label><br>
+
+                    <input
+                        type="checkbox"
+                        id="app"
+                        name="interest"
+                        value="app">
+                    <label for="app">Application Development</label><br>
+
+                    <input
+                        type="checkbox"
+                        id="ai"
+                        name="interest"
+                        value="ai">
+                    <label for="ai">Artificial Intelligence</label><br><br>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        placeholder="Write your message here..."
+                        minlength="10"
+                        maxlength="500"
+                        required></textarea>
+                    <br><br>
+
+                    <label for="attachment">Attach a File (optional):</label><br>
+                    <input
+                        type="file"
+                        id="attachment"
+                        name="attachment">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="rating">
+                        How would you rate my website? (1-10)
+                    </label><br>
+                    <input
+                        type="number"
+                        id="rating"
+                        name="rating"
+                        min="1"
+                        max="10">
+                    <br><br>
+
+                    <label for="satisfaction">Your satisfaction:</label><br>
+                    <input
+                        type="range"
+                        id="satisfaction"
+                        name="satisfaction"
+                        min="0"
+                        max="100"
+                        value="50">
+                    <br><br>
+
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        name="agreement"
+                        value="yes"
+                        required>
+                    <label for="agreement">
+                        I confirm that the information I provided is accurate.
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tsega's Personal Website</p>
+        <p>
+            <a href="index.html">Back to Home</a>
+        </p>
+    </footer>
+
+</body>
+</html>
